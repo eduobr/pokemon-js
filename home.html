@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pelea Pokemon</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Pelea Pokemon</h1>
+        </header>
+        <div class="row">
+            <div class="col-6">
+                <h2>Pokemon 1</h2>
+                <div class="row">
+                    <div class="col">
+                        <select class="form-control" id="pokemon1">
+                            <option value="0">Seleccione</option>
+                        </select>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-block btn-primary" id="btnSelectPokemon1">Seleccionar</button>
+                    </div>
+                </div>
+                <img src="..." alt="..." class="img-thumbnail rounded mx-auto d-block" id="imgPokemon1">
+                <table class="table">
+                    <thead class="bg-success">
+                        <tr>
+                            <th scope="col" colspan="2">Estadísticas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Special Attack:</td>
+                            <td id="special-attack"></td>
+                        </tr>
+                        <tr>
+                            <td>Attack:</td>
+                            <td id="attack"></td>
+                        </tr>
+                        <tr>
+                            <td>Defense:</td>
+                            <td id="defense"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Ataques</h3>
+                <p id="pMovimiento1">Moviento 1</p>
+                <p id="pMovimiento2">Moviento 2</p>
+            </div>
+            <div class="col-6">
+                <h2>Pokemon 2</h2>
+                <div class="row">
+                    <div class="col">
+                        <select class="form-control" id="pokemon2">
+                            <option value="0">Seleccione</option>
+                        </select>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-block btn-primary" id="btnSelectPokemon2">Seleccionar</button>
+                    </div>
+                </div>
+                <img src="..." alt="..." class="img-thumbnail rounded mx-auto d-block" id="imgPokemon2">
+                <table class="table">
+                    <thead class="bg-warning">
+                        <tr>
+                            <th scope="col" colspan="2">Estadísticas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Special Attack:</td>
+                            <td id="special-attack2"></td>
+                        </tr>
+                        <tr>
+                            <td>Attack:</td>
+                            <td id="attack2"></td>
+                        </tr>
+                        <tr>
+                            <td>Defense:</td>
+                            <td id="defense2"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Ataques</h3>
+                <p id="pMovimiento3">Moviento 1</p>
+                <p id="pMovimiento4">Moviento 2</p>
+            </div>
+            <button class="btn btn-block btn-outline-danger mt-1" id="btnPelea">Pelea</button>
+            <h3>Historial Pokemones</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Pokemon 1</th>
+                        <th>Habilidad 1</th>
+                        <th>Habilidad 2</th>
+                        <th>Pokemon 2</th>
+                        <th>Habilidad 1</th>
+                        <th>Habilidad 2</th>
+                    </tr>
+                </thead>
+                <tbody id="histPoke">
+                	
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
